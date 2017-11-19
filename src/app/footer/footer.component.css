@@ -1,0 +1,36 @@
+/***************************页脚部分****************************************/
+footer {
+  height: 130px;
+  margin-top: 5px;
+  background-color: #373737;
+  color: #fff;
+}
+
+#footer > ul {
+  overflow: hidden;
+  margin: 10px auto 0;
+}
+
+#footer li {
+  line-height: 60px;
+  margin-left: 20px;
+}
+
+#footer > ul b {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background: url(../../assets/imgs/concern.png) no-repeat;
+}
+
+#footer li:nth-child(3) b {
+  background-position: -60px 0
+}
+
+#footer li:nth-child(4) b {
+  background-position: -120px 0
+}
+
+#footer li:last-child b {
+  background-position: -180px 0
+}

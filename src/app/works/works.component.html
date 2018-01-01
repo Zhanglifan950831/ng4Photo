@@ -1,3 +1,18 @@
-<p>
-  作品展示的界面
-</p>
+<section>
+  <h2 class="title">摄影精品</h2>
+  <article>
+    <div class="container clearfix">
+      <div class="col-sm-10 col-sm-offset-1">
+        <div (click)="chooseCurrentItem($event, idx)" class="col-sm-4 work-content" [ngClass]="{'selectedRotate': chosenIdx == idx && bRotate}" *ngFor="let item of photoList; let idx = index">
+          <div>
+            <img [src]="'../../assets/imgs/meitu/'+item.imgItem" alt="" class="img-responsive">
+          </div>
+          <div>
+            <span>{{item.imgDesc}}</span>
+            <h1 class="text-center">Photo By</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</section>
